@@ -1,0 +1,226 @@
+/* All Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* Common Designs */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #e5e5e5;
+  margin: 0px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.container {
+  width: 870px;
+  border-radius: 5px;
+  margin-top: 37px;
+}
+
+.title {
+  color: #562eff;
+}
+/* -------------------- 
+  Header Style Starts 
+-------------------- */
+.navigationbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #562eff;
+  color: white;
+  margin: 0px;
+  height: 94px;
+}
+.content1 {
+  display: flex;
+  margin-left: 200px;
+}
+.content2 {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+.contents {
+  padding: 0px 15px;
+  text-decoration: none;
+  color: white;
+}
+/* -------------------- 
+  Header Style Ends 
+-------------------- */
+
+/* -----------------------
+  All-Players Style Start
+--------------------------*/
+.top-players-title {
+  margin-left: 33px;
+  margin-top: 33px;
+  margin-bottom: 40px;
+}
+.all-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 29px;
+  margin-bottom: 30px;
+}
+hr {
+  width: 807px;
+  border: 1px solid #d1d1d1;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+  margin-left: 30px;
+}
+.player-name {
+  font-size: 18px;
+  margin-left: 16px;
+}
+/* -----------------------
+  All-Players Style End
+--------------------------*/
+
+/* -----------------------
+  Top Blogs Style Start
+--------------------------*/
+.blog-container {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 42px;
+}
+.top-blog-title {
+  margin-top: 30px;
+  margin-bottom: 31px;
+}
+.top-blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 26px;
+}
+.blog {
+  display: flex;
+}
+.blog-image img {
+  width: 177px;
+  height: 117px;
+}
+.blog-title-and-author {
+  margin-left: 16px;
+}
+.blog-title-and-author .span1 {
+  color: #9f9f9f;
+}
+.blog-title-and-author p {
+  color: #562eff;
+}
+/* -----------------------
+  Top Blogs Style End
+--------------------------*/
+
+/* -----------------------------
+  Latest Course Style Starts
+-------------------------------*/
+.container2 {
+  width: 870px;
+  border-radius: 5px;
+  margin-top: 37px;
+}
+
+.container2 h1 {
+  margin-left: 33px;
+  margin-top: 31px;
+  margin-bottom: 11px;
+}
+.all-course {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 11px;
+  margin-left: 28px;
+  margin-right: 36px;
+  margin-bottom: 14.21px;
+}
+.course {
+  padding: 13px 11px;
+}
+.course-image img {
+  width: 224px;
+  height: 104px;
+}
+.course-name {
+  margin-top: 19px;
+  margin-bottom: 7px;
+}
+.course-instructor {
+  margin: 0;
+  color: #ed6b4f;
+}
+.course-info {
+  display: flex;
+  justify-content: space-between;
+}
+.course-info p {
+  color: #a2a2a2;
+  margin: 0px;
+}
+.course-duration {
+  display: flex;
+  padding: 0px 5px;
+  background: #ffe4e8;
+  border-radius: 14.6913px;
+}
+.course-duration p {
+  width: 50px;
+  height: 20px;
+}
+.fa-clock {
+  color: #ff4a60;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+}
+.fa-star {
+  color: #ffc014;
+}
+/* -----------------------------
+  Latest Course Style Ends
+-------------------------------*/
+
+/* --------------------------------------------
+  Media Query or Responsiveness Style Starts 
+-------------------------------------------- */
+@media only screen and (max-width: 690px) {
+  .container,
+  .container2 {
+    width: 100%;
+  }
+  .all-players,
+  .top-blogs,
+  .all-course {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course,
+  .blog,
+  .player,
+  .course-info {
+    flex-direction: column;
+  }
+  .course-duration {
+    width: 75px;
+  }
+  .navigationbar {
+    display: none;
+  }
+}
+/* --------------------------------------------
+  Media Query or Responsiveness Style Ends 
+-------------------------------------------- */
